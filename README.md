@@ -1,4 +1,7 @@
-### MEUS PROJETOS BASICOS EM PYTHON
+### MEUS PROJETOS BASICOS
+
+### LINGUAGENS USADAS
+
 <p>
   <img 
     align="center" 
