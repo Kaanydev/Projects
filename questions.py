@@ -65,8 +65,8 @@ if continuacao0 == "Sim":
     while True:
         print("Lembre-se de enviar sua resposta em letra MAIUSCULA")
         pergunta2 = str(input("Qual das alternativas acima está correta?"))
-        rpcerta2 = C
-        if pergunta2 == "C":
+        rpcerta2 = D
+        if pergunta2 == "D":
             pontuacao+=1
             resposta2 = (f"\033[36;32mA resposta está certa, você ganhou 1 ponto, você possui {pontuacao} Pontos\033[m")
             print(resposta2)
@@ -104,8 +104,8 @@ if continuacao1 == "Sim":
     while True:
         print("Lembre-se de enviar sua resposta em letra MAIUSCULA")
         pergunta3 = str(input("Qual das alternativas acima está correta?"))
-        rpcerta3 = D
-        if pergunta3 == "D":
+        rpcerta3 = A
+        if pergunta3 == "A":
             pontuacao+=1
             resposta3 = (f"\033[36;32mA resposta está certa, você ganhou 1 ponto, você possui {pontuacao} Pontos\033[m")
             print(resposta3)
