@@ -1,6 +1,6 @@
 <p>
   <img 
-    align="left" 
+    align="center" 
     alt="Python" 
     title="Python"
     width="105px" 
