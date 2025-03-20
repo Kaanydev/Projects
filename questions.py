@@ -5,34 +5,43 @@ medalhas=0
 erros=0
 
 nome = (input("Digite seu nome:"))
-print(f"Ok {nome}, Vamos começar")
 
-print("\033[35mPergunta 1\033[m")
-print("\033[35mComo são causados os terremotos?\033[m")
-A = print("Opção A: O leviatãn decide se mexer\033")
-B = print("Opção B: A cratera causada pelos meteoros que cairam na terra afunda um pouco\033")
-C = print("Opção C: O manto terrestre se movimenta\033")
-D = print("Opção D: As placas tectônicas se movimentam lenta e sucessivamente sobre uma camada de rocha.\033")
 
-while True:
-    print("Lembre-se se enviar sua resposta em letra MAIUSCULA")
-    pergunta1 = str(input("Qual das alternativas acima está correta?"))
-    rpcerta1 = D
-    if pergunta1 == "D":
-        pontuacao+=1
-    resposta = (f"\033[36;32mA resposta está certa, você ganhou 1 ponto, você possui {pontuacao} Ponto\033[m")
-    if pergunta1 == "D":
-        print(resposta)
-        break
-    else:
-        os.system("cls")
-        print("\033[35m A resposta está errada, tente novamente\033[m")
-        erros+=1
-        print("\033[92mComo são causados os terremotos?\033[m")
-        A = print("Opção A: O leviatãn decide se mexer\033")
-        B = print("Opção B: A cratera causada pelos meteoros que cairam na terra afunda um pouco\033")
-        C = print("Opção C: O manto terrestre se movimenta\033")
-        D = print("Opção D: As placas tectônicas se movimentam lenta e sucessivamente sobre uma camada de rocha.\033")
+#Tutorial
+tutorial = int(input("Deseja passar pelo tutorial? \n (1) Sim , (2) Não"))
+if tutorial == 1:
+    print(f"Bem vindo {nome}, Antes de começarmos irei explicar como funciona o sistema \r O sistema é composto com 4 perguntas, todas havendo como recompensa de 1 Ponto, se totalizar os 4 pontos, você recebe 1 Medalha.")
+
+irperguntas = int(input("Deseja continuar? se sim pressione 1"))
+if irperguntas > 1:
+    print("Valor Inválido")
+if irperguntas == 1:
+    print("\033[35mPergunta 1\033[m")
+    print("\033[35mComo são causados os terremotos?\033[m")
+    A = print("Opção A: O leviatãn decide se mexer\033")
+    B = print("Opção B: A cratera causada pelos meteoros que cairam na terra afunda um pouco\033")
+    C = print("Opção C: O manto terrestre se movimenta\033")
+    D = print("Opção D: As placas tectônicas se movimentam lenta e sucessivamente sobre uma camada de rocha.\033")
+
+    while True:
+        print("Lembre-se se enviar sua resposta em letra MAIUSCULA")
+        pergunta1 = str(input("Qual das alternativas acima está correta?"))
+        rpcerta1 = D
+        if pergunta1 == "D":
+         pontuacao+=1
+        resposta = (f"\033[36;32mA resposta está certa, você ganhou 1 ponto, você possui {pontuacao} Ponto\033[m")
+        if pergunta1 == "D":
+            print(resposta)
+            break
+        else:
+            os.system("cls")
+            print("\033[35m A resposta está errada, tente novamente\033[m")
+            erros+=1
+            print("\033[92mComo são causados os terremotos?\033[m")
+            A = print("Opção A: O leviatãn decide se mexer\033")
+            B = print("Opção B: A cratera causada pelos meteoros que cairam na terra afunda um pouco\033")
+            C = print("Opção C: O manto terrestre se movimenta\033")
+            D = print("Opção D: As placas tectônicas se movimentam lenta e sucessivamente sobre uma camada de rocha.\033")
 
 
 if pergunta1 == "D":
@@ -57,10 +66,10 @@ if continuacao0 == "Sim":
     os.system("cls")
     print("\033[35mPergunta 2\033[m")
     print("\033[35mA escola de Paraqui organizou uma Olimpíada de Matemática para seus 250 alunos e premiou com medalhas os 8% que obtiveram as notas mais altas. Quantas medalhas foram distribuídas?\033[m")
-    A = print("Opção A: 8\033")
-    B = print("Opção B: 11\033")
-    C = print("Opção C: 14\033")
-    D = print("Opção D: 20\033")
+    A = print(" Opção A: 8\033")
+    B = print(" Opção B: 11\033")
+    C = print(" Opção C: 14\033")
+    D = print(" Opção D: 20\033")
 
     while True:
         print("Lembre-se de enviar sua resposta em letra MAIUSCULA")
@@ -75,11 +84,11 @@ if continuacao0 == "Sim":
             os.system("cls")
             print("Repetindo pergunta...")
             time.sleep(2)
-            print("\033[35mQual foi a motivação ta 1° guerra mundial?\033[m")
-            A = print("Opção A: O assassinato do arquiduque Francisco Ferdinando, herdeiro do trono austríaco, e sua esposa no dia 28 de junho de 1914.\033")
-            B = print("Opção B: Foi uma consequência da grande expansão de crédito por meio de oferta monetária.\033")
-            C = print("Opção C: A divisão do país em duas zonas com governos ideologicamente distintos em 1945 e a invasão do sul promovida pelas tropas do norte em junho de 1950.\033")
-            D = print("Opção D: A primeira grande guerra, a economia, o descontentamento e a desorganização do aparato estatal russo.\033")
+            print("\033[35mA escola de Paraqui organizou uma Olimpíada de Matemática para seus 250 alunos e premiou com medalhas os 8% que obtiveram as notas mais altas. Quantas medalhas foram distribuídas?\033[m")
+            A = print("Opção A: 8\033")
+            B = print("Opção B: 11\033")
+            C = print("Opção C: 14\033")
+            D = print("Opção D: 20\033")
             print("\033[0;31m A resposta está errada, tente novamente!\033[m")
             erros+=1
 
@@ -113,10 +122,8 @@ if continuacao1 == "Sim":
             os.system("cls")
             break
         else:
-            os.system("cls")
             print("Repetindo a pergunta...")
             time.sleep(2)
-            os.system("cls")
             print("\033[mQual foi a motivação ta 1° guerra mundial?\033[m")
             A = print("Opção A: O assassinato do arquiduque Francisco Ferdinando, herdeiro do trono austríaco, e sua esposa no dia 28 de junho de 1914.\033")
             B = print("Opção B: Foi uma consequência da grande expansão de crédito por meio de oferta monetária.\033")
@@ -190,3 +197,9 @@ class acertos:
 
 usuario = acertos(f"{pontuacao}", f"{erros}")
 print(f"O usuario {nome} teve {usuario.acertos} acertos e {usuario.erros} erros")
+
+if pontuacao == 4:
+    medalhas+=1
+    print(f"Você obteve {medalhas} Medalha. Parabéns!")
+if pontuacao < 4:
+    print("Você não concluiu o questionário com excelencia")
